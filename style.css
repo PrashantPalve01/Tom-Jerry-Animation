@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(to bottom, rgb(240, 72, 111), rgb(133, 190, 234));
+    height: 100vh;
+}
+.container > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container >div img:first-child{
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    animation: jerry 5s ease-in-out infinite;
+}
+.container >div img:last-child{
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    animation: tom 5s ease-in-out infinite;
+}
+ 
+@keyframes jerry{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes tom{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
